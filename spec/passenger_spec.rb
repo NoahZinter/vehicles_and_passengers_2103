@@ -23,4 +23,13 @@ describe Passenger do
       expect(taylor.adult?).to eq false
     end
   end
+
+  describe '#driver?' do
+    it 'is false by default' do
+      charlie = Passenger.new({"name" => "Charlie", "age" => 18})
+      taylor = Passenger.new({"name" => "Taylor", "age" => 12})
+
+      expect(charlie.driver?).to eq false
+    end
+  end
 end
