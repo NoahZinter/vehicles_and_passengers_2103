@@ -31,4 +31,12 @@ describe Vehicle do
       expect(vehicle.speeding?).to eq true
     end
   end
+
+  describe '#passengers' do
+    it 'starts with an empty array of passengers' do
+      vehicle = Vehicle.new("2001", "Honda", "Civic")
+
+      expect(vehicle.passengers).to eq []
+    end
+  end
 end
