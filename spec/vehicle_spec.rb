@@ -14,4 +14,12 @@ describe Vehicle do
       expect(vehicle.model).to eq 'Civic'
     end
   end
+
+  describe '#speeding?' do
+    it 'defaults to false' do
+      vehicle = Vehicle.new("2001", "Honda", "Civic")
+
+      expect(vehicle.speeding?).to eq false
+    end
+  end
 end
